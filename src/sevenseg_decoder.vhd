@@ -1,14 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity sevenSegDecoder is
+entity sevenseg_decoder is
   port(
     i_Data : in  STD_LOGIC_VECTOR(3 downto 0);  -- hex digit or special code
     o_Seg  : out STD_LOGIC_VECTOR(6 downto 0)   -- [6]=a … [0]=g, active-low
   );
-end sevenSegDecoder;
+end sevenseg_decoder;
 
-architecture rtl of sevenSegDecoder is
+architecture rtl of sevenseg_decoder is
 begin
   with i_Data select
     -- 1) Sign codes
