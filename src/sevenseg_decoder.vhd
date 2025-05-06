@@ -18,15 +18,15 @@ begin
 
     -- 2) DIGITS 0-9
       "1000000" when "0000",  -- 0: a-f on (0), g off (1)
-      "1001111" when "0001",  -- 1: b,c on
-      "0010010" when "0010",  -- 2: a,b,d,e,g
-      "0000110" when "0011",  -- 3: a,b,c,d,g
-      "1001100" when "0100",  -- 4: b,c,f,g
-      "0100100" when "0101",  -- 5: a,c,d,f,g
-      "0100000" when "0110",  -- 6: a,c,d,e,f,g
-      "0001111" when "0111",  -- 7: a,b,c
+      "1111001" when "0001",  -- 1: b,c on
+      "0100100" when "0010",  -- 2: a,b,d,e,g
+      "0110000" when "0011",  -- 3: a,b,c,d,g
+      "0011001" when "0100",  -- 4: b,c,f,g
+      "0010010" when "0101",  -- 5: a,c,d,f,g
+      "0000010" when "0110",  -- 6: a,c,d,e,f,g
+      "1111000" when "0111",  -- 7: a,b,c
       "0000000" when "1000",  -- 8: all segments on
-      "0000100" when "1001",  -- 9: a,b,c,d,f,g
+      "0011000" when "1001",  -- 9: a,b,c,d,f,g
 
     -- 3) DEFAULT → BLANK
       "1111111" when others;  -- catch-all off
