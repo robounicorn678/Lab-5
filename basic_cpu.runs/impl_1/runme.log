@@ -1,0 +1,256 @@
+
+*** Running vivado
+    with args -log top_basys3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_basys3.tcl -notrace
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon May  5 20:04:05 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_basys3.tcl -notrace
+Command: link_design -top top_basys3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 491.703 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 623.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 627.516 ; gain = 340.949
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 663.871 ; gain = 36.355
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1209.215 ; gain = 545.344
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 1 Initialization | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 26af6fb5f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 42 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2f39391b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Retarget | Checksum: 2f39391b7
+INFO: [Opt 31-389] Phase Retarget created 18 cells and removed 28 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 25b9091b3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Constant propagation | Checksum: 25b9091b3
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 5 Sweep | Checksum: 2950944a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Sweep | Checksum: 2950944a9
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 2950944a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1611.207 ; gain = 0.000
+BUFG optimization | Checksum: 2950944a9
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 2950944a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Shift Register Optimization | Checksum: 2950944a9
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 2950944a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Post Processing Netlist | Checksum: 2950944a9
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.252 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 9 Finalization | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              18  |              28  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.266 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 25cd2e972
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1611.207 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1611.207 ; gain = 983.691
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_basys3_drc_opted.rpt -pb top_basys3_drc_opted.pb -rpx top_basys3_drc_opted.rpx
+Command: report_drc -file top_basys3_drc_opted.rpt -pb top_basys3_drc_opted.pb -rpx top_basys3_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/top_basys3_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1611.207 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/top_basys3_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 17e32ba72
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1611.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.207 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device

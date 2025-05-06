@@ -26,7 +26,7 @@ begin
       "0000010" when "0110",  -- 6: a,c,d,e,f,g on
       "1111000" when "0111",  -- 7: a,b,c on
       "0000000" when "1000",  -- 8: all on
-      "0000100" when "1001",  -- 9: a,b,c,d,f,g on
+      "0001100" when "1001",  -- 9: a,b,c,d,f,g on
 
     -- default → blank
       "1111111" when others;  -- catch-all off
