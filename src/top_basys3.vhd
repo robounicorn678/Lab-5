@@ -57,6 +57,7 @@ architecture top_basys3_arch of top_basys3 is
 	signal w_clk_tdm : std_logic;
     signal w_clk_fsm : std_logic;
     signal w_flags : std_logic_vector(2 downto 0);
+    signal w_op_pad : std_logic_vector(3 downto 0);
 	
 	signal f_registerA :   unsigned(7 downto 0) := "00000000";
 	signal f_registerB :   unsigned(7 downto 0) := "00000000";
@@ -66,6 +67,7 @@ architecture top_basys3_arch of top_basys3 is
     --constants
     constant SIGN_BLANK : std_logic_vector(3 downto 0) := "1111";  -- no digit
     constant SIGN_MINUS : std_logic_vector(3 downto 0) := "1110";  -- minus bar
+    
 	
 	component clock_divider is
 	   generic ( constant k_DIV : natural := 2	); -- How many clk cycles until slow clock toggles
@@ -104,7 +106,7 @@ architecture top_basys3_arch of top_basys3 is
         Port(
             i_A : in  STD_LOGIC_VECTOR (7 downto 0);
             i_B : in STD_LOGIC_VECTOR (7 downto 0);
-            i_op : in STD_LOGIC_VECTOR (2 downto 0);
+            i_op : in STD_LOGIC_VECTOR (3 downto 0);
             o_result : out STD_LOGIC_VECTOR (7 downto 0);
             o_flags : out STD_LOGIC_VECTOR (2 downto 0)
         );
@@ -154,12 +156,12 @@ begin
     
     ALU_inst : ALU
     port map(
-        i_A => std_logic_vector(f_registerA),
-        i_B => std_logic_vector(f_registerB),
-        i_op => sw(2 downto 0),
-        
-        o_result => w_result,
-        o_flags => w_flags
+      i_A      => std_logic_vector(f_registerA),
+      i_B      => std_logic_vector(f_registerB),
+      -- pad MSB='0' to make a 4-bit vector:
+      i_op     => w_op_pad,     
+      o_result => w_result,
+      o_flags  => w_flags
     );
     
     SSD_inst : sevenSegDecoder 
@@ -188,6 +190,7 @@ begin
     w_sign <= SIGN_MINUS when w_signbit = '1' 
     else SIGN_BLANK;
                    
+    w_op_pad <= '0' & sw(2 downto 0);
     
     -- update the FSM when a button is toggled
     fsm : process (w_clk_fsm)

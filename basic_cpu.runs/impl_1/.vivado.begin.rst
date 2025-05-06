@@ -48,3 +48,8 @@
     <Process Command="vivado.bat" Owner="C27Charles.Liermann" Host="C27-5CG31326RQ" Pid="2116" HostCore="16" HostMemory="016442740736">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="C27Charles.Liermann" Host="C27-5CG31326RQ" Pid="5696" HostCore="16" HostMemory="016442740736">
+    </Process>
+</ProcessHandle>

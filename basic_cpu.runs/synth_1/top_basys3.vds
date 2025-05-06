@@ -1,17 +1,26 @@
-
-*** Running vivado
-    with args -log top_basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_basys3.tcl
-
-
-
-****** Vivado v2024.2 (64-bit)
-  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
-  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
-  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon May  5 18:46:22 2025
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  5 18:46:22 2025
+# Process ID         : 25164
+# Current directory  : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1
+# Command line       : vivado.exe -log top_basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_basys3.tcl
+# Log file           : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/top_basys3.vds
+# Journal file       : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1\vivado.jou
+# Running On         : C27-5CG31326RQ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30401 MB
+# Available Virtual  : 10595 MB
+#-----------------------------------------------------------
 source top_basys3.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.srcs/utils_1/imports/synth_1/top_basys3.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.srcs/utils_1/imports/synth_1/top_basys3.dcp for incremental synthesis
@@ -20,7 +29,6 @@ Command: synth_design -top top_basys3 -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-[libprotobuf ERROR C:\protobuf-3.21.12\protobuf\src\google\protobuf\wire_format_lite.cc:618] String field 'HDMetricDBGroup.name' contains invalid UTF-8 data when parsing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}

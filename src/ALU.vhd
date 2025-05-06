@@ -59,6 +59,7 @@ architecture behavioral of ALU is
     
     signal w_9bit_A : STD_LOGIC_VECTOR(8 downto 0);
     signal w_9bit_B : STD_LOGIC_VECTOR(8 downto 0);
+    signal op3 : STD_LOGIC_VECTOR(2 downto 0);
   
 begin
 	-- PORT MAPS ----------------------------------------
@@ -70,7 +71,7 @@ begin
     w_9bit_A(7 downto 0) <= i_A;
     w_9bit_B(8) <= '0';
     w_9bit_B(7 downto 0) <= i_B;
-	
+	op3 <= i_op(2 downto 0);
 	
 	-- perform the operations
 	w_add_res <= std_logic_vector(unsigned(w_9bit_A) + unsigned(w_9bit_B)) when (i_op = "000") else
