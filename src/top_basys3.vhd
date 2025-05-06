@@ -114,8 +114,8 @@ end component ALU;
     
     component sevenseg_decoder is 
         Port(
-            i_Data : in STD_LOGIC_VECTOR (3 downto 0);
-            o_Seg : out STD_LOGIC_VECTOR (6 downto 0)
+            i_Hex : in STD_LOGIC_VECTOR (3 downto 0);
+            o_seg_n : out STD_LOGIC_VECTOR (6 downto 0)
         );
     end component sevenseg_decoder;
 
@@ -166,8 +166,8 @@ begin
     
     SSD_inst : sevenseg_decoder 
     port map(
-        i_Data => w_disp_digit,
-        o_Seg => seg
+        i_Hex => w_disp_digit,
+        o_seg_n => seg
     );
     
     twoscomp_inst : twos_comp

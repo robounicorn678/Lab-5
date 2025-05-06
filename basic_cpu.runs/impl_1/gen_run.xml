@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1746494598">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1746494943">
   <File Type="PA-TCL" Name="top_basys3.tcl"/>
   <File Type="REPORTS-TCL" Name="top_basys3_reports.tcl"/>
   <File Type="INIT-TIMING" Name="top_basys3_timing_summary_init.rpt"/>
@@ -104,6 +104,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/src/sevenseg_decoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/src/twoscomp_decimal.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -112,13 +118,6 @@
     </File>
     <File Path="$PPRDIR/src/top_basys3.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/src/sevenseg_decoder.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

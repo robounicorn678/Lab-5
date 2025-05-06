@@ -3,16 +3,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity sevenseg_decoder is
   port(
-    i_Data : in  STD_LOGIC_VECTOR(3 downto 0);  -- hex digit or special code
-    o_Seg  : out STD_LOGIC_VECTOR(6 downto 0)   -- [6]=a … [0]=g, active-low
-  );
+    i_Hex   : in  STD_LOGIC_VECTOR(3 downto 0);  -- TB drives this
+    o_seg_n : out STD_LOGIC_VECTOR(6 downto 0)   -- TB probes this
+    );
 end sevenseg_decoder;
 
 architecture rtl of sevenseg_decoder is
 begin
-  with i_Data select
+  with i_Hex select
     -- 1) Sign codes
-    o_Seg <= 
+    o_seg_n <= 
       "1111111" when "1111",  -- BLANK (all OFF)
       "1111110" when "1110",  -- MINUS (g=0, all others=1)
 
