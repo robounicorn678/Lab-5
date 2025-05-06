@@ -21,3 +21,4 @@
 # Total Virtual      : 30401 MB
 # Available Virtual  : 10249 MB
 #-----------------------------------------------------------
+source top_basys3.tcl -notrace
