@@ -1,0 +1,396 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May  4 21:18:03 2025
+# Process ID         : 1544
+# Current directory  : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10684 C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\basic_cpu.xpr
+# Log file           : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/vivado.log
+# Journal file       : C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5\vivado.jou
+# Running On         : C27-5CG31326RQ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 30401 MB
+# Available Virtual  : 14685 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.xpr
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+[Sun May  4 21:21:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/runme.log
+[Sun May  4 21:21:32 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+add_files -norecurse C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun May  4 21:26:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/top_basys3.dcp to C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun May  4 21:27:34 2025] Launched synth_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/runme.log
+[Sun May  4 21:27:34 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.srcs/utils_1/imports/synth_1/top_basys3.dcp with file C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/top_basys3.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun May  4 21:31:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/runme.log
+[Sun May  4 21:31:32 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun May  4 21:32:54 2025] Launched synth_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/runme.log
+[Sun May  4 21:32:54 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+reset_run synth_1
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun May  4 21:36:46 2025] Launched synth_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/synth_1/runme.log
+[Sun May  4 21:36:46 2025] Launched impl_1...
+Run output will be captured here: C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/basic_cpu.runs/impl_1/runme.log
+add_files -norecurse C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd' cannot be added to the project because it already exists in the project, skipping this file
+add_files -norecurse C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd' cannot be added to the project because it already exists in the project, skipping this file
+import_files -norecurse C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+add_files -norecurse -scan_for_includes C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+import_files -force -norecurse C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab-dos/labo-tuwo/src/sevenseg_decoder.vhd
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\controller_fsm.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab-dos\labo-tuwo\src\sevenseg_decoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\TDM4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\ALU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\clock_divider.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\src\top_basys3.vhd:]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May  4 21:46:24 2025...
