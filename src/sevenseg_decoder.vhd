@@ -17,7 +17,7 @@ begin
       "0111111" when "1110",  -- MINUS: only g=1 (off), a-f=0 (on)
 
     -- 2) DIGITS 0-9
-      "0000001" when "0000",  -- 0: a-f on (0), g off (1)
+      "1000000" when "0000",  -- 0: a-f on (0), g off (1)
       "1001111" when "0001",  -- 1: b,c on
       "0010010" when "0010",  -- 2: a,b,d,e,g
       "0000110" when "0011",  -- 3: a,b,c,d,g
