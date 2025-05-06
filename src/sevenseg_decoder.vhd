@@ -13,8 +13,8 @@ begin
   with i_Hex select
     -- 1) BLANK & MINUS
     o_seg_n <=
-      "1111111" when "1111",  -- BLANK: all segments off
-      "0111111" when "1110",  -- MINUS: only g=1 (off), a-f=0 (on)
+--      "1111111" when "1111",  -- BLANK: all segments off
+--      "0111111" when "1110",  -- MINUS: only g=1 (off), a-f=0 (on)
 
     -- 2) DIGITS 0-9
       "1000000" when "0000",  -- 0: a-f on (0), g off (1)
