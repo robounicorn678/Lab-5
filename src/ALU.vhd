@@ -41,7 +41,7 @@ entity ALU is
     Port(
         i_A : in  STD_LOGIC_VECTOR (7 downto 0);
         i_B : in STD_LOGIC_VECTOR (7 downto 0);
-        i_op : in STD_LOGIC_VECTOR (3 downto 0);
+        i_op : in STD_LOGIC_VECTOR;
         o_result : out STD_LOGIC_VECTOR (7 downto 0);
         o_flags : out STD_LOGIC_VECTOR (2 downto 0)
     );

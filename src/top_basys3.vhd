@@ -102,15 +102,15 @@ architecture top_basys3_arch of top_basys3 is
         );
     end component twos_comp;
     
-    component ALU is 
-        Port(
-            i_A : in  STD_LOGIC_VECTOR (7 downto 0);
-            i_B : in STD_LOGIC_VECTOR (7 downto 0);
-            i_op : in STD_LOGIC_VECTOR (3 downto 0);
-            o_result : out STD_LOGIC_VECTOR (7 downto 0);
-            o_flags : out STD_LOGIC_VECTOR (2 downto 0)
-        );
-    end component ALU;
+component ALU is
+  port(
+    i_A  : in  STD_LOGIC_VECTOR(7 downto 0);
+    i_B  : in  STD_LOGIC_VECTOR(7 downto 0);
+    i_op : in  STD_LOGIC_VECTOR;     -- no range
+    o_result : out STD_LOGIC_VECTOR(7 downto 0);
+    o_flags  : out STD_LOGIC_VECTOR(2 downto 0)
+  );
+end component ALU;
     
     component sevenSegDecoder is 
         Port(
