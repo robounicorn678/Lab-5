@@ -41,7 +41,7 @@ entity ALU is
     Port(
         i_A      : in  STD_LOGIC_VECTOR (7 downto 0);
         i_B      : in  STD_LOGIC_VECTOR (7 downto 0);
-        i_op     : in  STD_LOGIC_VECTOR;             -- unconstrained
+        i_op     : in  STD_LOGIC_VECTOR (3 downto 0);             -- unconstrained
         o_result : out STD_LOGIC_VECTOR (7 downto 0);
         o_flags  : out STD_LOGIC_VECTOR (2 downto 0)
     );
@@ -66,29 +66,29 @@ begin
     w_9bit_B <= '0' & i_B;
 
     -- 2) Slice off exactly the bottom 3 bits of whatever-width i_op:
-    op3 <= i_op(i_op'high downto i_op'high-2);
+    op3 <= i_op(2 downto 0);
 
     --------------------------------------------------------------------
     -- 3) All of your operation assignments now compare op3 instead of i_op
 
-    w_add_res   <= std_logic_vector(unsigned(w_9bit_A) + unsigned(w_9bit_B))  when op3 = "000" else
-                   std_logic_vector(unsigned(w_9bit_A) - unsigned(w_9bit_B))  when op3 = "001" else
-                   (others => '0');
+    w_add_res <= std_logic_vector(unsigned(w_9bit_A) + unsigned(w_9bit_B))  when op3 = "000" else
+                 std_logic_vector(unsigned(w_9bit_A) - unsigned(w_9bit_B))  when op3 = "001" else
+                 (others => '0');
 
     w_andor_res <= w_9bit_A and w_9bit_B when op3 = "011" else
                    w_9bit_A or  w_9bit_B when op3 = "010" else
                    (others => '0');
 
     w_Lshift_res <= std_logic_vector(shift_left(unsigned(w_9bit_A),
-                                                 to_integer(unsigned(w_9bit_B(2 downto 0)))))  when op3 = "110" else
+                               to_integer(unsigned(w_9bit_B(2 downto 0))))) when op3 = "110" else
                     std_logic_vector(shift_left(unsigned(w_9bit_A),
-                                                 to_integer(unsigned(w_9bit_B(2 downto 0)))))  when op3 = "111" else
+                                to_integer(unsigned(w_9bit_B(2 downto 0))))) when op3 = "111" else
                     (others => '0');
 
     w_Rshift_res <= std_logic_vector(shift_right(unsigned(w_9bit_A),
-                                                  to_integer(unsigned(w_9bit_B(2 downto 0)))))  when op3 = "100" else
+                                to_integer(unsigned(w_9bit_B(2 downto 0))))) when op3 = "100" else
                     std_logic_vector(shift_right(unsigned(w_9bit_A),
-                                                  to_integer(unsigned(w_9bit_B(2 downto 0)))))  when op3 = "101" else
+                                to_integer(unsigned(w_9bit_B(2 downto 0))))) when op3 = "101" else
                     (others => '0');
 
     --------------------------------------------------------------------

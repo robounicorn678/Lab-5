@@ -11,23 +11,23 @@ end sevenseg_decoder;
 architecture rtl of sevenseg_decoder is
 begin
   with i_Hex select
-    -- 1) Sign codes (inverted+reversed)
+    -- blank and minus
     o_seg_n <= 
-      "0000000" when "1111",  -- BLANK: was "1111111" → inv="0000000" → rev="0000000"
-      "1000000" when "1110",  -- MINUS: was "1111110" → inv="0000001" → rev="1000000"
+      "1111111" when "1111",  -- BLANK (all off)
+      "0111111" when "1110",  -- MINUS (only bit6=g=0 → middle bar)
 
-    -- 2) Digits 0-9 (inverted+reversed)
-      "0111111" when "0000",  -- 0: was "0000001" → inv="1111110" → rev="0111111"
-      "0000110" when "0001",  -- 1: was "1001111" → inv="0110000" → rev="0000110"
-      "1011011" when "0010",  -- 2: was "0010010" → inv="1101101" → rev="1011011"
-      "1001111" when "0011",  -- 3: was "0000110" → inv="1111001" → rev="1001111"
-      "1100110" when "0100",  -- 4: was "1001100" → inv="0110011" → rev="1100110"
-      "1101101" when "0101",  -- 5: was "0100100" → inv="1011011" → rev="1101101"
-      "1111101" when "0110",  -- 6: was "0100000" → inv="1011111" → rev="1111101"
-      "0000111" when "0111",  -- 7: was "0001111" → inv="1110000" → rev="0000111"
-      "1111111" when "1000",  -- 8: was "0000000" → inv="1111111" → rev="1111111"
-      "1101111" when "1001",  -- 9: was "0000100" → inv="1111011" → rev="1101111"
+    -- digits 0-9
+      "1000000" when "0000",  -- 0: a-f on, g off
+      "1111001" when "0001",  -- 1: b,c on
+      "0100100" when "0010",  -- 2: a,b,d,e,g on
+      "0110000" when "0011",  -- 3: a,b,c,d,g on
+      "0011001" when "0100",  -- 4: b,c,f,g on
+      "0010010" when "0101",  -- 5: a,c,d,f,g on
+      "0000010" when "0110",  -- 6: a,c,d,e,f,g on
+      "1111000" when "0111",  -- 7: a,b,c on
+      "0000000" when "1000",  -- 8: all on
+      "0010000" when "1001",  -- 9: a,b,c,d,f,g on
 
-    -- 3) Default → blank
-      "0000000" when others;  -- catch-all blank
+    -- default → blank
+      "1111111" when others;  -- catch-all off
 end rtl;
