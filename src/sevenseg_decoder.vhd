@@ -27,6 +27,14 @@ begin
       "1111000" when "0111",  -- 7: a,b,c
       "0000000" when "1000",  -- 8: all segments on
       "0011000" when "1001",  -- 9: a,b,c,d,f,g
+      
+      -- A-F
+      "0001000" when "1010",  -- A
+      "1100000" when "1011",  -- b
+      "0110001" when "1100",  -- C
+      "1000010" when "1101",  -- d
+      "0110000" when "1110",  -- E
+      "0111000" when "1111",  -- F
 
     -- 3) DEFAULT → BLANK
       "1111111" when others;  -- catch-all off
