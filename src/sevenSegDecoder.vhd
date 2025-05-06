@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity sevenSegDecoder is
   port(
-    i_D : in  STD_LOGIC_VECTOR(3 downto 0);  -- hex digit or special code
-    o_S : out STD_LOGIC_VECTOR(6 downto 0)   -- segments a-g, active-low
+    i_Data : in  STD_LOGIC_VECTOR(3 downto 0);  -- hex digit or special code
+    o_Seg : out STD_LOGIC_VECTOR(6 downto 0)   -- segments a-g, active-low
   );
 end sevenSegDecoder;
 
@@ -17,11 +17,11 @@ begin
   -- bit 2 = e (bottom left)
   -- bit 1 = f (top left)
   -- bit 0 = g (middle)
-  with i_D select
+  with i_Data select
     -- 1) Sign codes:
     --    "1111" => blank => all segments off = "1111111"
     --    "1110" => minus => only middle (g) ON = bit6=0, others=1 => "0111111"
-    o_S <= "1111111" when "1111",
+    o_Seg <= "1111111" when "1111",
            "0111111" when "1110",
 
     -- 2) Digits 0-9:

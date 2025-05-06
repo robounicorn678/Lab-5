@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon May  5 17:57:14 2025
+| Date         : Mon May  5 18:23:13 2025
 | Host         : C27-5CG31326RQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_basys3_control_sets_placed.rpt
 | Design       : top_basys3
@@ -74,8 +74,8 @@ Table of Contents
 |         Clock Signal        | Enable Signal |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------------+---------------+------------------------------+------------------+----------------+--------------+
 |  TdmClock_inst/w_clk_tdm    |               |                              |                1 |              2 |         2.00 |
-|  clk_IBUF_BUFG              |               |                              |                4 |              4 |         1.00 |
 |  stateMachineClock_inst/CLK | btnC_IBUF     | btnU_IBUF                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG              |               |                              |                4 |              4 |         1.00 |
 |  f_registerA_reg[7]_i_1_n_0 |               |                              |                4 |              8 |         2.00 |
 |  f_registerB__0             |               |                              |                5 |              8 |         1.60 |
 |  w_bin_reg[7]_i_2_n_0       |               |                              |                5 |              8 |         1.60 |

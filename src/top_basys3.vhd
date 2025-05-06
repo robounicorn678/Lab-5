@@ -112,8 +112,8 @@ architecture top_basys3_arch of top_basys3 is
     
     component sevenSegDecoder is 
         Port(
-            i_D : in STD_LOGIC_VECTOR (3 downto 0);
-            o_S : out STD_LOGIC_VECTOR (6 downto 0)
+            i_Data : in STD_LOGIC_VECTOR (3 downto 0);
+            o_Seg : out STD_LOGIC_VECTOR (6 downto 0)
         );
     end component sevenSegDecoder;
 
@@ -164,8 +164,8 @@ begin
     
     SSD_inst : sevenSegDecoder 
     port map(
-        i_D => w_disp_digit,
-        o_S => seg
+        i_Data => w_disp_digit,
+        o_Seg => seg
     );
     
     twoscomp_inst : twos_comp
