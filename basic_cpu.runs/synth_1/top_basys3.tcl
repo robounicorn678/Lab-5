@@ -79,7 +79,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/ALU.vhd
   C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/TDM4.vhd
   C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/clock_divider.vhd
-  C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/sevenSegDecoder.vhd
+  C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/sevenseg_decoder.vhd
   C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/twoscomp_decimal.vhd
   C:/Users/C27Charles.Liermann/Documents/ECE281/Labs/lab5.copy/Lab-5/src/top_basys3.vhd
 }
