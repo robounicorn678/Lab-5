@@ -1,4 +1,0 @@
-ERROR: Exception caught trying to open file C:\Users\C27Charles.Liermann\Documents\ECE281\Labs\lab5.copy\Lab-5\basic_cpu.runs\impl_1/runme.log
-	Exception name: Error
-	Exception error code: 70
-	Exception message: Permission denied

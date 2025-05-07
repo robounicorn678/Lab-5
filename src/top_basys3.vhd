@@ -56,8 +56,10 @@ architecture top_basys3_arch of top_basys3 is
 	signal w_disp_digit : std_logic_vector(3 downto 0);
 	signal w_clk_tdm : std_logic;
     signal w_clk_fsm : std_logic;
-    signal w_flags : std_logic_vector(2 downto 0);
-    signal w_op_pad : std_logic_vector(3 downto 0);
+    signal w_flags : std_logic_vector(3 downto 0);
+    signal w_sign_code : std_logic_vector(3 downto 0);
+    signal w_seg_raw : std_logic_vector(6 downto 0);
+    signal w_seg_out : std_logic_vector(6 downto 0);
 	
 	signal f_registerA :   unsigned(7 downto 0) := "00000000";
 	signal f_registerB :   unsigned(7 downto 0) := "00000000";
@@ -108,7 +110,7 @@ component ALU is
     i_B  : in  STD_LOGIC_VECTOR(7 downto 0);
     i_op : in  STD_LOGIC_VECTOR;     -- no range
     o_result : out STD_LOGIC_VECTOR(7 downto 0);
-    o_flags  : out STD_LOGIC_VECTOR(2 downto 0)
+    o_flags  : out STD_LOGIC_VECTOR(3 downto 0)
   );
 end component ALU;
     
@@ -121,6 +123,9 @@ end component ALU;
 
   
 begin
+
+w_sign_code <= SIGN_MINUS when w_signbit = '1'
+             else SIGN_BLANK;
 	-- PORT MAPS ----------------------------------------
     stateMachineClock_inst: clock_divider
     generic map (k_DIV => 50000000)
@@ -143,7 +148,7 @@ begin
         i_clk => w_clk_tdm,
         i_reset => '0',
         --i_D3 => "0000",
-        i_D3 => w_sign,
+        i_D3 => w_sign_code,
         --i_D2 => "0000",
         i_D2 => w_hundreds,
         --i_D1 => w_bin(7 downto 4),
@@ -159,7 +164,7 @@ begin
       i_A      => std_logic_vector(f_registerA),
       i_B      => std_logic_vector(f_registerB),
       -- pad MSB='0' to make a 4-bit vector:
-      i_op     => w_op_pad,     
+      i_op     => sw(2 downto 0),     
       o_result => w_result,
       o_flags  => w_flags
     );
@@ -167,7 +172,7 @@ begin
     SSD_inst : sevenseg_decoder 
     port map(
         i_Hex => w_disp_digit,
-        o_seg_n => seg
+        o_seg_n => w_seg_raw
     );
     
     twoscomp_inst : twos_comp
@@ -187,10 +192,15 @@ begin
     f_state_next(1) <= f_state(2);
     f_state_next(0) <= f_state(1);
     
-    w_sign <= SIGN_MINUS when w_signbit = '1' 
+    w_sign_code <= SIGN_MINUS when w_signbit = '1' 
     else SIGN_BLANK;
-                   
-    w_op_pad <= '0' & sw(2 downto 0);
+    
+    w_seg_out <=
+  "1111111" when w_disp_digit = "1111" else   -- blank
+  "0111111" when w_disp_digit = "1110" else   -- minus bar (middle on)
+  w_seg_raw;
+  
+  seg <= w_seg_out;               
     
     -- update the FSM when a button is toggled
     fsm : process (w_clk_fsm)
@@ -223,14 +233,19 @@ begin
                 std_logic_vector(f_registerB) when (f_state(1 downto 0) = "10") else
                 w_result when (f_state(1 downto 0) = "01");
     
+    
+             
+             
     -- leds for debugging, should be disabled for final submission
     -- led(7 downto 0) <= w_bin;
 
 --     2:1 mux for the anodes (use this for B and C
      an(3 downto 0) <=   "1111" when (f_state = "1000") else -- blank state encoding is 1000
                          w_sel;
-     led(15 downto 13) <= w_flags when (f_state = "0001") else
+     led(15 downto 13) <= w_flags when (f_state = "001") else
                           "000";
+                          
+         
 --     led(3 downto 0) <= f_state;
        led(3) <= f_state(0);
        led(2) <= f_state(1);

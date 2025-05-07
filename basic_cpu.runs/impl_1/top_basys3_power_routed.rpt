@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Mon May  5 20:17:40 2025
+| Date             : Wed May  7 15:12:31 2025
 | Host             : C27-5CG31326RQ running 64-bit major release  (build 9200)
 | Command          : report_power -file top_basys3_power_routed.rpt -pb top_basys3_power_summary_routed.pb -rpx top_basys3_power_routed.rpx
 | Design           : top_basys3
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.094        |
+| Total On-Chip Power (W)  | 0.092        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.022        |
+| Dynamic (W)              | 0.020        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      689 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      393 |     20800 |            1.89 |
-|   CARRY4       |    <0.001 |       87 |      8150 |            1.07 |
+| Slice Logic    |    <0.001 |      677 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      385 |     20800 |            1.85 |
+|   CARRY4       |    <0.001 |       85 |      8150 |            1.04 |
 |   Register     |    <0.001 |       94 |     41600 |            0.23 |
 |   F7/F8 Muxes  |    <0.001 |        7 |     32600 |            0.02 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |    <0.001 |      533 |       --- |             --- |
-| I/O            |     0.020 |       38 |       106 |           35.85 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      522 |       --- |             --- |
+| I/O            |     0.018 |       38 |       106 |           35.85 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.094 |          |           |                 |
+| Total          |     0.092 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,7 +141,7 @@ Table of Contents
 +------------+-----------+
 | Name       | Power (W) |
 +------------+-----------+
-| top_basys3 |     0.022 |
+| top_basys3 |     0.020 |
 +------------+-----------+
 
 

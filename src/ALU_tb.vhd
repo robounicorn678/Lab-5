@@ -23,7 +23,7 @@ architecture testbench of ALU_tb is
             i_B      : in  std_logic_vector(7 downto 0);
             i_op     : in  std_logic_vector(2 downto 0);
             o_result : out std_logic_vector(7 downto 0);
-            o_flags  : out std_logic_vector(3 downto 0)   -- N  Z  C  V
+            o_flags  : out std_logic_vector(3 downto 0)   
         );
     end component;
 
